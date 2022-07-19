@@ -1,0 +1,171 @@
+:root{
+    --hover-pink: pink;
+}
+
+p {
+    font-family: 모던체;
+}
+
+p:hover {
+    color: pink;
+}
+
+hr {
+    margin: 30px;
+    border: 1px solid #ddd;
+}
+a {
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+}
+
+a:hover {
+    color: pink;
+}
+
+.profile_icon {
+    margin: 5px;
+}
+
+
+.main {
+    /* 중앙 정렬 */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; */
+}
+
+
+.container {
+    border: 1px solid #000;
+    padding: 100px;
+}
+
+/* header 중앙정렬 */
+.Header {
+    margin-right: 65%;
+}
+/* hr 선 끝까지 */
+.Header2 {
+    margin: 40px 0px 40px 0px;
+}
+.Header3 {
+    margin-top: 40px;
+}
+
+.mainText {
+    box-shadow: 5px 7px 20px 5px #ddd;
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 2% 2% 2% 30%;
+}
+
+.project_contents {
+    box-shadow: 5px 7px 20px 5px #ddd;
+    border-radius: 20px;
+    padding: 30px 50px;
+    margin: 2% 2% 2% 2%;
+}
+
+.profile {    
+    height: auto;
+    padding: 30px;
+    width: 23%;
+    border-radius: 30px;
+    box-shadow: 5px 7px 20px 5px #ddd;
+    float: left;
+    margin: 0% 2% 0% 2%;
+    text-align: center;
+}
+
+.profilePicture {
+    width: 300px;
+    border-radius: 150px;
+}
+
+.myName {
+    font-family: '필기체';
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+/* a태그 애니메이션 */
+.hover-3 {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: pink; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .hover-3:hover {
+    --_p: 100%;
+    --_s: .3s;
+  }
+
+/* 메뉴 애니메이션 */
+.underline-btn {
+    display: inline-block;
+    padding: 1em 0;
+    border-radius: 0;
+    color: pink;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 0.678rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+  }
+  .underline-btn:before, .underline-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 0;
+  }
+  .underline-btn:before {
+    transition: width 0s ease, background 0.4s ease;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+  }
+  .underline-btn:after {
+    right: 2.2%;
+    bottom: 6px;
+    background: pink;
+    transition: width 0.4s ease;
+  }
+  .underline-btn:hover:before {
+    width: 97.8%;
+    background: pink;
+    transition: width 0.4s ease;
+  }
+  .underline-btn:hover:after {
+    width: 97.8%;
+    background: 0 0;
+    transition: all 0s ease;
+  }
+
+  .project_picture {
+    width: 100%;
+  }
+
+
+
+/* 반응형 웹 */
+@media  screen and (max-width:1405px) {
+    .mainText{
+        margin: 2% 10% 2% 10%;
+    }
+    
+    .profile {
+        display: none;
+    }
+}

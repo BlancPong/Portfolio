@@ -1,0 +1,40 @@
+@font-face {
+    font-family: '필기체';
+    src: url(./fonts/Harmony\ Signature\ Regular.ttf);    
+}
+
+@font-face {
+    font-family: '모던체';
+    src: url(./fonts/Morena-Bold.otf);    
+}
+
+.navi {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration-line: none;
+    box-shadow: 5px 5px 15px #ddd;
+}
+
+.menu {
+    font-family: '모던체';
+    margin-top: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    vertical-align: middle;
+}
+
+.menu:active {
+    color: pink;
+}
+
+.logo {
+    font-family: '필기체';
+    font-size: 40px;
+    padding: 0px 50px 0px 50px;
+    text-decoration: none;
+    color: #000;
+}

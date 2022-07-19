@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'maple';
+  src: url(./fonts/Maplestory\ Light.ttf);
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'maple';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
